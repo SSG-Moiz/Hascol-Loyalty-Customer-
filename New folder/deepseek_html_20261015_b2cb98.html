@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Delete Account - P2P Track</title>
+  <link rel="icon" type="image/png" href="https://p2ptrack.com/wp-content/uploads/2025/03/cropped-P2P-Logo-e1741341470332-270x270.png">
+  <link rel="apple-touch-icon" href="https://p2ptrack.com/wp-content/uploads/2025/03/cropped-P2P-Logo-e1741341470332-270x270.png">
+  <style>
+    :root {
+      --brand: #1e5bd8;
+      --brand-dark: #0b1b3a;
+      --danger: #c62828;
+      --bg: #f5f7fb;
+      --text: #1d2433;
+      --muted: #5b6577;
+      --card: #ffffff;
+      --border: #dde3ee;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+    a { color: var(--brand); }
+
+    header { background: var(--brand-dark); }
+    .nav {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .nav img { height: 44px; width: auto; display: block; }
+
+    .hero {
+      background: linear-gradient(135deg, var(--brand-dark), var(--brand));
+      color: #fff;
+      text-align: center;
+      padding: 54px 20px 70px;
+    }
+    .hero small { letter-spacing: 2px; font-weight: 600; opacity: .85; }
+    .hero h1 { margin: 10px 0 8px; font-size: 34px; }
+    .hero p { margin: 0 auto; max-width: 620px; opacity: .9; }
+
+    main { max-width: 800px; margin: -40px auto 40px; padding: 0 16px; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px 28px;
+      margin-bottom: 22px;
+      box-shadow: 0 6px 20px rgba(11,27,58,.07);
+    }
+    h2 { margin: 0 0 12px; font-size: 21px; color: var(--brand-dark); }
+    ol, ul.list { padding-left: 22px; margin: 0; }
+    li { margin-bottom: 6px; }
+
+    label { display: block; margin-top: 14px; font-weight: 600; font-size: 14px; }
+    input {
+      width: 100%;
+      padding: 12px;
+      margin-top: 6px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      font-size: 16px;
+      background: #fff;
+      color: var(--text);
+    }
+    input:focus { outline: 2px solid var(--brand); border-color: var(--brand); }
+    button {
+      margin-top: 22px;
+      padding: 13px 28px;
+      background: var(--brand);
+      color: #fff;
+      border: 0;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button:hover { background: #164ab3; }
+
+    .keep {
+      background: #fff6f6;
+      border-left: 4px solid var(--danger);
+      padding: 12px 18px;
+      border-radius: 8px;
+    }
+    .keep ul { margin: 0; padding-left: 20px; }
+
+    footer {
+      background: var(--brand-dark);
+      color: #c9d4ea;
+      text-align: center;
+      padding: 28px 16px;
+      font-size: 14px;
+    }
+    footer img { height: 40px; margin-bottom: 10px; }
+    footer p { margin: 10px 0 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav">
+      <a href="https://p2ptrack.com/">
+        <img src="https://p2ptrack.com/wp-content/uploads/2025/03/p2p-white.png" alt="P2P Track">
+      </a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <small>ACCOUNT &amp; DATA</small>
+    <h1>Delete Your Account</h1>
+    <p>
+      Request deletion of your account and associated data for the app
+      <strong>P2P Track</strong> by <strong>P2P – Track</strong>.
+    </p>
+  </section>
+
+  <main>
+    <div class="card">
+      <h2>How to request account deletion</h2>
+      <ol>
+        <li>Fill in the form below with your name, phone number, registered email and reference number.</li>
+        <li>Click <strong>Submit Request</strong>. Your request is sent to our support team at info@p2ptrack.com.</li>
+        <li>We will verify your identity using the details provided.</li>
+        <li>Your account and data will be deleted within <strong>7 days</strong> of verification, and we will confirm by email.</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>Request form</h2>
+      <form action="https://formsubmit.co/info@p2ptrack.com" method="POST">
+        <input type="hidden" name="_subject" value="P2P Track - Account Deletion Request">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="hidden" name="_template" value="table">
+        <!-- Optional thank-you page:
+        <input type="hidden" name="_next" value="https://yourdomain.com/thanks.html"> -->
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="Name" required>
+
+        <label for="number">Phone Number</label>
+        <input type="tel" id="number" name="Phone Number" required>
+
+        <label for="email">Registered Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="ref">Reference Number</label>
+        <input type="text" id="ref" name="Reference Number" required>
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Data that will be deleted</h2>
+      <ul class="list">
+        <li>Profile information (name, email, phone number)</li>
+        <li>Content and files uploaded by you</li>
+        <li>App activity and preferences</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>Data that may be kept</h2>
+      <div class="keep">
+        <ul>
+          <li>Transaction or billing records – kept for up to <strong>90 days</strong> for legal and accounting purposes</li>
+          <li>Backup copies – removed within <strong>30 days</strong> of deletion</li>
+          <li>Anonymous/aggregated analytics data that cannot identify you</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Contact</h2>
+      <p style="margin:0">
+        For any questions, contact
+        <a href="mailto:info@p2ptrack.com">info@p2ptrack.com</a>.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://p2ptrack.com/">
+      <img src="https://p2ptrack.com/wp-content/uploads/2025/03/p2p-white.png" alt="P2P Track">
+    </a>
+    <p>© 2025 P2P – Track. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
